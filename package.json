@@ -1,0 +1,24 @@
+{
+  "name": "leapserver",
+  "version": "0.1.0",
+  "description": "Small server to get left and right hand positions for LeapMotion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giles Dring <giles@dringtech.com>",
+  "license": "ISC",
+  "dependencies": {
+    "leapjs": "^0.6.4",
+    "osc": "^2.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dringtech/leapserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dringtech/leapserver/issues"
+  },
+  "homepage": "https://github.com/dringtech/leapserver#readme"
+}
