@@ -22,7 +22,7 @@ Leap.loop( leapOptions, function(frame) {
     return a[0] < b[0];
   }).map(function(hand, index) {
     var msg = {
-      address: '/leap/hand/palmPosition',
+      address: '/leap/hand/position',
       args: [
         { type: "f", value: hand.type == "left" ? 0 : 1 },
         { type: "f", value: hand.palmPosition[0] },
@@ -30,7 +30,6 @@ Leap.loop( leapOptions, function(frame) {
         { type: "f", value: hand.palmPosition[1] },
       ]
     };
-    console.log(msg);
     udpPort.send(msg);
   });
 });
